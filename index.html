@@ -1,116 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de contacto con bulma</title>
-    <link rel="stylesheet" href="/bulma/css/bulma.min.css">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" />
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/js/bulma.min.js"></script>
-</head>
-<!doctype html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Formulario de contacto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet">
     
-    
+    <title>Formularo de contacto</title>
   </head>
-  <body>
-
-    <!-- Header -->
-<div class="container-fluid">
-    <div class="columns">
-      <div class="column is-3">
-        <div class="button has-text-primary has-text-black">
-          <a class="button is-rounded-circle" href="#">Logotipo</a>
+<body>
+    <nav class="top is-menu has-border-bottom">
+      <div class="container">
+        <div class="columns is-centered">
+          <button class="button is-primary" type="button"><b>Inicio</b></button>
+          <button class="button is-primary" type="button"><b>Comercio</b></button>
+          <button class="button is-primary" type="button"><b>Servicios</b></button>
         </div>
       </div>
-      <div class="column is-9">
-        <ul class="nav">
-          <li class="nav-item has-flex">
-            <a class="nav-link is-capitalized" href="#">Inicio</a>
-          </li>
-          <li class="nav-item has-flex">
-            <a class="nav-link is-capitalized" href="#">Acerca de</a>
-          </li>
-          <li class="nav-item has-flex">
-            <a class="nav-link is-capitalized" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-
-
-
-
-
-    <div class="container">
-      <div class="columns is-centered is-mobile">
-        <h1 class="title is-1">Formulario de contacto</h1>
-      </div>
+    </nav>
     
-      <div class="columns is-centered is-mobile">
-        <form class="form">
-          <div class="field">
-            <label for="nombre" class="">Nombre</label>
-            <span class="field-subtitle">Ingresa tu nombre</span>
-            <input class="input" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" />
-          </div>
-    
-          <div class="field">
-            <label for="email" class="">Email</label>
-            <span class="field-subtitle">Ingresa tu correo electrónico</span>
-            <input class="input" id="email" type="email" name="email" placeholder="ejemplo@midominio.com" />
-          </div>
-    
-          <div class="field">
-            <label for="mensaje" class="">Pregunta</label>
-            <span class="field-subtitle">Ingresa tu pregunta</span>
-            <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Ingresa tu pregunta" rows="3"></textarea>
-          </div>
-    
-          <div class="columns">
-            <div class="column is-6 is-offset-3">
-              <button class="button is-success" type="reset">Limpiar</button>
+    <main>
+      <div class="container">
+        <div class="columns is-centered is-mobile">
+          <h1 class="header has-text-centered">Formulario de contacto</h1>
+          <form class="form">
+            <div class="field">
+              <label for="nombre" class="">Nombre</label>
+              <span class="field-subtitle">Ingresa tu nombre</span>
+              <input class="input is-size-5 has-full-width" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" />
+            </div>
+      
+            <div class="field">
+              <label for="email" class="">Email</label>
+              <span class="field-subtitle">Ingresa tu correo electrónico</span>
+              <input class="input is-size-5 is-email has-full-width" id="email" type="email" name="email" placeholder="ejemplo@midominio.com" />
+            </div>
+      
+            <div class="field">
+              <label for="mensaje" class="">Pregunta</label>
+              <span class="field-subtitle">Ingresa tu pregunta</span>
+              <textarea class="textarea is-small has-full-width" id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+      
+            <div class="column is-offset-3">
+              <button class="button is-danger" type="reset">Limpiar</button>
               <button class="button is-primary" type="submit">Enviar</button>
             </div>
-          </div>
-          </div>
-        </form>
-        </div>
-
-
-
-
-<!-- Footer -->
-<div class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="is-4">
-          <h3 class="">Empresa</h3>
-          <p>C/ Juan XXIII, 2<br> 2801, EL alto</p>
-          <p class="has-text-centered">Teléfono: 65626772<br>
-            Email: info@dominio.com</p>
-        </div>
-        <div class="is-4">
-          <h3 class="">Página web</h3>
-          <p>www.dominio.com</p>
+          </form>
         </div>
       </div>
-    </div>
-  
-
-
-
-
-
-
-        </body>
-</html>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5">
+            <p class="has-text-centered">Información de contacto</p>
+            <p>Dirección:, <br></p>
+            <p class="has-text-centered">
+              Telefóno: <br>
+              Email: info@midominio.com<br>
+              Sitio web: www.midominio.com
+            </p>
+          </div>
+          <div class="column is-7">
+            <p class="has-text-centered">Seguirnos en</p>
+            <br>
+            <div class="social-links is-align-center">
+              <a href="#" class="button is-light is-flat">Facebook</a>
+              <a href="#" class="button is-light is-flat">Twitter</a>
+              <a href="#" class="button is-light is-flat">LinkedIn</a>
+            </div>
+            </div>
+            </footer>
+            </body>
+            </html>
