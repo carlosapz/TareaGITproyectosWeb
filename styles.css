@@ -1,243 +1,26 @@
-/* Estilos para la barra de navegación */
-
-.top {
-    background-color: blue;
+body {
+    background: linear-gradient(to bottom, #00aaff, #00ffaa);
     color: white;
   }
   
-  /* Estilos para los botones */
-  
-  .is-primary {
-    background-color: red;
-    color: white;
+  .navbar {
+    margin-bottom: 2rem;
   }
   
-  /* Estilos para el formulario de contacto */
-  
-  .is-danger {
-    background-color: red;
+  .button.is-primary {
+    background-color: #007bff;
+    border-color: #007bff;
   }
   
-  /* Estilos para el formulario de contacto */
-  
-  .is-danger button {
-    background-color: red;
-    color: white;
+  .button.is-light {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    color: #333;
   }
   
-  .is-primary button {
-    background-color: red;
-    color: white;
+  .footer {
+    background-color: #2d2d2d;
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 2rem 0;
   }
   
-  .is-primary input.is-size-5 {
-    background-color: red;
-    color: white;
-    border: 0;
-  }
-  
-  .is-size-5 {
-    width: 50%;
-  }
-  
-  .is-primary input[type="email"] {
-    border: 1px solid red;
-  }
-  
-  .is-size-2 {
-    width: 20%;
-  }
-  
-  .is-size-3 {
-    width: 30%;
-  }
-  
-  .is-size-4 {
-    width: 40%;
-  }
-  
-  .is-size-5 {
-    width: 50%;
-  }
-  
-  .is-align-right {
-    text-align: right;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .is-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  body {
-    background-color: white;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .columns {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-right: 2%;
-    padding-left: 2%;
-    background-color: blue;
-}
-
-.button {
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-  background-color: #555;
-  color: white;
-}
-
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.label {
-  margin-right: 10px;
-}
-
-.field-subtitle {
-  font-size: 16px;
-  color: #ccc;
-}
-
-.field-subtitle:after {
-  content: ':';
-}
-
-.field-input {
-  padding: 10px;
-  border: solid 2px #555555;
-}
-
-.field-input:focus {
-  outline: none;
-}
-
-.textarea {
-  padding: 10px;
-  border: solid 2px #555555;
-  border-radius: 3px;
-  max-width: 80%;
-}
-
-.footer {
-  background-color: #2e3135;
-  color: white;
-  margin-top: 40px;
-  padding-top: 10px;
-}
-
-.footer p {
-  font-size: 13px;
-  color: #777777;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer button {
-  background-color: white;
-  border: none;
-  color: #2e3135;
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: normal; 
-  cursor: pointer;
-}
-
-.footer button:hover {
-  background-color: #1e2022;
-}
-
-.footer .social-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer .social-links a:hover {
-  background-color: #1e2022;
-  color: white;
-}
-
-.footer .social-links a i {
-  font-size: 20px;
-  color: #555555;
-  transition: all 0.3s ease;
-}
-
-.footer .social-links a i:hover {
-  color: #1e2022;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.social-links:hover {
-  background-color: #1e2022;
-  color: white;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #555555;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #1e2022;
-}
-
-.social-links.is-align-center {
-  display: flex;
-  justify-content: center;
-}
-
-.social-links a:last-child {
-  margin-right: 0;
-}
-
-.social-links a:last-child i {
-  margin-right: auto;
-}

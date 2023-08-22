@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet">
-    
-    <title>Formularo de contacto</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+  <title>Formulario de Contacto</title>
+</head>
 <body>
-    <nav class="top is-menu has-border-bottom">
-      <div class="container">
-        <div class="columns is-centered">
-          <button class="button is-primary" type="button"><b>Inicio</b></button>
-          <button class="button is-primary" type="button"><b>Comercio</b></button>
-          <button class="button is-primary" type="button"><b>Servicios</b></button>
+  <nav class="navbar is-primary">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <strong>Sitio ejemplo BULMA</strong>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#">Inicio</a>
+          <a class="navbar-item" href="#">Comercio</a>
+          <a class="navbar-item" href="#">Servicios</a>
         </div>
       </div>
-    </nav>
-    
-    <main>
-      <div class="container">
-        <div class="columns is-centered is-mobile">
-          <h1 class="header has-text-centered">Formulario de contacto</h1>
-          <form class="form">
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <h1 class="title has-text-centered">Formulario de Contacto</h1>
+          <form class="box" id="contact-form">
             <div class="field">
-              <label for="nombre" class="">Nombre</label>
-              <span class="field-subtitle">Ingresa tu nombre</span>
-              <input class="input is-size-5 has-full-width" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" />
+              <label class="label">Nombre</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Ingresa tu nombre">
+              </div>
             </div>
-      
             <div class="field">
-              <label for="email" class="">Email</label>
-              <span class="field-subtitle">Ingresa tu correo electrónico</span>
-              <input class="input is-size-5 is-email has-full-width" id="email" type="email" name="email" placeholder="ejemplo@midominio.com" />
+              <label class="label">Correo electrónico</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="correo@example.com">
+              </div>
             </div>
-      
             <div class="field">
-              <label for="mensaje" class="">Pregunta</label>
-              <span class="field-subtitle">Ingresa tu pregunta</span>
-              <textarea class="textarea is-small has-full-width" id="mensaje" name="mensaje" rows="5"></textarea>
+              <label class="label">Mensaje</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Escribe tu mensaje"></textarea>
+              </div>
             </div>
-      
-            <div class="column is-offset-3">
-              <button class="button is-danger" type="reset">Limpiar</button>
-              <button class="button is-primary" type="submit">Enviar</button>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-primary" type="submit">Enviar</button>
+              </div>
+              <div class="control">
+                <button class="button is-light" type="reset">Limpiar</button>
+              </div>
             </div>
           </form>
         </div>
       </div>
-    </main>
-    
-    <footer class="footer">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-5">
-            <p class="has-text-centered">Información de contacto</p>
-            <p>Dirección:, <br></p>
-            <p class="has-text-centered">
-              Telefóno: <br>
-              Email: info@midominio.com<br>
-              Sitio web: www.midominio.com
-            </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-5">
+          <p class="has-text-centered">Información de Contacto</p>
+          <p>Dirección:</p>
+          <p>Teléfono:</p>
+          <p>Email: info@midominio.com</p>
+          <p>Sitio web: www.midominio.com</p>
+        </div>
+        <div class="column is-7">
+          <p class="has-text-centered">Seguirnos en</p>
+          <div class="social-links is-align-center">
+            <a href="#" class="button is-light is-flat">Facebook</a>
+            <a href="#" class="button is-light is-flat">Twitter</a>
+            <a href="#" class="button is-light is-flat">LinkedIn</a>
           </div>
-          <div class="column is-7">
-            <p class="has-text-centered">Seguirnos en</p>
-            <br>
-            <div class="social-links is-align-center">
-              <a href="#" class="button is-light is-flat">Facebook</a>
-              <a href="#" class="button is-light is-flat">Twitter</a>
-              <a href="#" class="button is-light is-flat">LinkedIn</a>
-            </div>
-            </div>
-            </footer>
-            </body>
-            </html>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
